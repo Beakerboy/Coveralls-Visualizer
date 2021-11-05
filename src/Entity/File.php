@@ -22,10 +22,11 @@ class File
     return $this->source;
   }
 
-  public function getCoverageTotal() {
-    $yes_no_covered = array_map(function($a) { return is_int($a[0]) && $a > 0 ? 1 : 0; }, $this->coverage);
+  public function getCoveredPercent() {
+    $yes_no_covered = array_map(function($a) { return is_int($a) && $a > 0 ? 1 : 0; }, $this->coverage);
     $lines_covered = array_sum($yes_no_covered);
-    $total_lines = count($this->coverage);
+    $can_be_covered = array_map(function($a) { return is_int($a) ? 1 : 0; }, $this->coverage);
+    $total_lines = array_sum($can_be_covered);
     return $lines_covered / $total_lines;
   }
 

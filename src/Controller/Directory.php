@@ -11,7 +11,8 @@ class Directory extends Page
 
     $content = "<ul>"; 
     foreach ($this->coveralls->getSourceFiles() as $name => $file) {
-      $content .= "<li><a href='{$name}'>{$name}</a></li>";
+      $coverage = round($file->getCoveredPercent() * 100, 2);
+      $content .= "<li><a href='{$name}'>{$name} ({$coverage}%)</a></li>";
     }
     $content .= '</ul>';
     $this->content = $content;

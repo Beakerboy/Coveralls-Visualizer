@@ -21,11 +21,13 @@ class Page
   }
 
   public function __toString() {
-    $head = '<head><link rel="stylesheet" href="styles.css"></head>';
-    $output = '<html>' . $head . '<body><h1>Coverage Visualization</h1>';
-    $output .= $this->content;
+    $doctype = '<!DOCTYPE html>';
+    $head = '<head><title>Code Coverage</title><link rel="stylesheet" href="http://coverage.beakerboy.com/styles.css"></head>';
+    $body = '<body><h1>Code Coverage Visualization</h1>';
+    $body .= $this->content;
 
-    $output .= '</body></head>';
-    return $output;
+    $body .= '</body>';
+    $html = $doctype . '<html lang="en">' . $head . $body . '</html>';
+    return $html;
   }
 }

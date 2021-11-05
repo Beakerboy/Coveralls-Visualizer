@@ -31,7 +31,7 @@ class File extends Page
       $content .= "<tr class=\"{$class}\"><td>{$coverage}</td><td><pre>" . $row . '</pre></td></tr>';
       $i++;
     }
-    $content .= '</table></p>';
+    $content .= '</table>';
     $this->content = $content;
   }
 

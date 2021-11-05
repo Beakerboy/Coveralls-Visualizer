@@ -1,11 +1,11 @@
 .na {
-background-color: grey;
+  background-color: lightgrey;
 }
 
 .covered {
-background-color: green;
+  background-color: lightgreen;
 }
 
 .uncovered {
-background-color: red;
+  background-color: pink;
 }
