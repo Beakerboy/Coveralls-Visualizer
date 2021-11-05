@@ -2,6 +2,7 @@
 
 namespace Beakerboy\CoverallsVisualizer\Controller;
 
+use Beakerboy\CoverallsVisualizer\Site;
 use Beakerboy\CoverallsVisualizer\Controller\Directory;
 use Beakerboy\CoverallsVisualizer\Controller\File;
 use Beakerboy\CoverallsVisualizer\Entity\Coveralls;
@@ -22,7 +23,8 @@ class Page
 
   public function __toString() {
     $doctype = '<!DOCTYPE html>';
-    $head = '<head><title>Code Coverage</title><link rel="stylesheet" href="http://coverage.beakerboy.com/styles.css"></head>';
+    $css_path = Site::getCssPath();
+    $head = '<head><title>Code Coverage</title><link rel="stylesheet" href="' . $css_path . '"></head>';
     $body = '<body><h1>Code Coverage Visualization</h1>';
     $body .= $this->content;
 

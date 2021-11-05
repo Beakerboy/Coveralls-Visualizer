@@ -8,6 +8,9 @@ use Beakerboy\CoverallsVisualizer\Entity\Coveralls;
 
 class Site
 {
+  public static function getCssPath() {
+    return 'http://' . $_SERVER['SERVER_NAME'] . '/styles.css';
+  }
 
   public static function getPage() {
     $uri = $_SERVER['REQUEST_URI'];
