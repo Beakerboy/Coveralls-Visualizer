@@ -1,5 +1,5 @@
 # Coveralls-Visualizer
-Lightweight visualization of a coveralls file. The site visitor is presented with a list of files in a git repository. Any file can be selected and the visitor will se which lines have been covered by tests, and how many times.
+Lightweight visualization of a coveralls file. The site visitor is presented with a list of files in a git repository. Any file can be selected and the visitor can see which lines have been covered by tests, and how many times.
 
 Setup
 -----
