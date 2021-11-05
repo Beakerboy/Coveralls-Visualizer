@@ -21,7 +21,8 @@ class Page
   }
 
   public function __toString() {
-    $output = '<html><body><h1>Coverage Visualization</h1>';
+    $head = '<head><link rel="stylesheet" href="styles.css"></head>';
+    $output = '<html>' . $head . '<body><h1>Coverage Visualization</h1>';
     $output .= $this->content;
 
     $output .= '</body></head>';

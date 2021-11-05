@@ -1,0 +1,11 @@
+.na {
+background-color: grey;
+}
+
+.covered {
+background-color: green;
+}
+
+.uncovered {
+background-color: red;
+}

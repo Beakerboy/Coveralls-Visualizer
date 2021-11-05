@@ -29,4 +29,8 @@ class File
     return $lines_covered / $total_lines;
   }
 
+  public function getCoverageForLine(int $line) {
+    return $this->coverage[$line];
+  }
+
 }

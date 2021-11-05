@@ -28,7 +28,9 @@ class Coveralls
     return $this->source_files;
   }
 
-  public function getFoleNames() {
+  public function getFile($file) {
+    return $this->source_files[$file];
   }
+
 }
 
