@@ -50,6 +50,6 @@ jobs:
           ./vendor/bin/phpunit --version
           ./vendor/bin/phpunit --configuration tests/phpunit.xml --coverage-clover build/logs/clover.xml
       - name: PHP Code Sniffer
-        run: ./vendor/bin/phpcs --ignore=vendor .
+        run: ./vendor/bin/phpcs --ignore=vendor --standard=PSR12 .
       - name: Coverage File Creation
         run: php vendor/bin/php-coveralls -v --dry-run
