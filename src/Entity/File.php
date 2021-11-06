@@ -1,6 +1,6 @@
 <?php
 
-namespace Beakerboy\CoverallsVisualizer\Entity;
+namespace CoverallsVisualizer\Entity;
 
 class File
 {
