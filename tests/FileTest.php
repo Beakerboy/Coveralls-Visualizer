@@ -1,4 +1,3 @@
-
 <?php
 
 namespace CoverallsVisualizer\Tests;
