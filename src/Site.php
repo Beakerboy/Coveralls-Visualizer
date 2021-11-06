@@ -1,10 +1,10 @@
 <?php
 
-namespace Beakerboy\CoverallsVisualizer;
+namespace CoverallsVisualizer;
 
-use Beakerboy\CoverallsVisualizer\Controller\Directory;
-use Beakerboy\CoverallsVisualizer\Controller\File;
-use Beakerboy\CoverallsVisualizer\Entity\Coveralls;
+use CoverallsVisualizer\Controller\Directory;
+use CoverallsVisualizer\Controller\File;
+use CoverallsVisualizer\Entity\Coveralls;
 
 class Site
 {
