@@ -1,8 +1,8 @@
 <?php
 
-namespace Beakerboy\CoverallsVisualizer\Controller;
+namespace CoverallsVisualizer\Controller;
 
-use Beakerboy\CoverallsVisualizer\Controller\Page;
+use CoverallsVisualizer\Controller\Page;
 
 class File extends Page
 {
