@@ -1,8 +1,8 @@
 <?php
 
-namespace Beakerboy\CoverallsVisualizer\Entity;
+namespace CoverallsVisualizer\Entity;
 
-use Beakerboy\CoverallsVisualizer\Entity\File;
+use CoverallsVisualizer\Entity\File;
 
 class Coveralls
 {
