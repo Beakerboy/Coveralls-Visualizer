@@ -1,6 +1,6 @@
 <?php
 
-namespace CoverallsVisualizer\Tests;
+namespace CoverallsVisualizer\Tests\Entity;
 
 use CoverallsVisualizer\Entity\Coveralls;
 
